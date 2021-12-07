@@ -16,12 +16,12 @@
 }
 section.banner {
   position: relative;
-  min-height: 700px;
+  min-height: 400px;
   background-image: url('../assets/bg.jpg');
   width: 100%;
   background-size: cover;
   background-position: center;
-  padding: 70px 0;
+  padding: 150px 0;
 }
 section.banner > .container {
   position: relative;
@@ -34,4 +34,19 @@ section.banner > .container {
   left: 0;
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
+}
+
+div.call-banner h2 {
+  color: #fff;
+  font-size: 3rem;
+}
+div.call-banner p {
+  margin: 1.5rem 0;
+  color: #aaa;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+div.call-banner > div > div > button {
+  border-radius: 0;
+  color: #fff;
 }

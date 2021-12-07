@@ -50,14 +50,14 @@
 
           <div class="overlay"></div>
 
-          <div class="container">
+          <div class="container call-banner">
             <div class="row">
 
-              <div class="col-md-12">
+              <div class="col-md-12 text-center">
 
-                <h2>My Project</h2>
-                <h3>My first project utilizing bootstrap with PHP</h3>
-                <button type="button" class="btn btn-lg btn-primary">Click Here for more projects</button>
+                <h2><?php echo htmlentities('<') ?>My Project<?php echo htmlentities('>') ?></h2>
+                <p>My first project utilizing bootstrap with PHP</p>
+                <button type="button" class="btn btn-md  btn-info">Click Here for more projects</button>
 
               </div>
 
