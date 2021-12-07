@@ -1,14 +1,18 @@
 :root {
-  --white: '#fff';
-  --gray: '#aaa';
-  --blackText: '#333';
-  --black: '#000';
+  --white: #fff;
+  --gray: #aaa;
+  --blackText: #333;
+  --black: #000;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
 }
 
 .box {
@@ -49,4 +53,48 @@ div.call-banner p {
 div.call-banner > div > div > button {
   border-radius: 0;
   color: #fff;
+}
+
+section.register {
+  background: #26A69A;
+  padding: 1.2rem 0;
+}
+
+section.register h2 {
+  color: #fff;
+}
+
+section.register input[type="text"].form-control {
+  width: 50%;
+  height: 2.5rem;
+  border: 0,0625rem solid #ccc;
+  display: inline-block;
+  border-radius: 0;
+  outline: none;
+}
+section.register input[type="submit"] {
+  height: 2.5rem;
+  width: 4rem;
+  border-radius: 0 10px 10px 0;
+  border: transparent;
+  background-color: #f8f9fa;
+  transition: .5s;
+}
+
+section.register input[type="submit"]:hover{
+  background-color: #f9fafb;
+}
+
+section.testimony {
+  margin: 1rem 0 0 0;
+}
+
+section.testimony h2 {
+  color: var(--blackText);
+}
+section.testimony blockquote {
+  color: var(--gray);
+  font-size: .9rem;
+  border-left: var(--gray) solid .3rem;
+  padding: 0 0 0 1rem;
 }
