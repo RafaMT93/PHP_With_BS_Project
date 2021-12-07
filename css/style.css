@@ -2,6 +2,7 @@
   --white: #fff;
   --gray: #aaa;
   --blackText: #333;
+  --dark: #212529;
   --black: #000;
   --defaultColor: #26A69A;
 }
@@ -92,7 +93,6 @@ section.register input[type="submit"]:hover{
   background-color: #f9fafb;
 }
 
-
 /*Testimony Section*/
 
 section.testimony {
@@ -156,7 +156,16 @@ section.team .team-single .user-picture {
   transform: translate(20%, 0%);
 }
 
+/*Contact us Section*/
 
+section.contact-us {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 1.875rem 0;
+}
+section.contact-us textarea {
+  height: 120px;
+}
 
 @media screen and (max-width: 1024px) {
   section.team .team-single .user-picture {
