@@ -44,7 +44,6 @@
 
     </nav>
 
-
     <section class="box">
 
       <section class="banner">
@@ -274,6 +273,14 @@
           </div>
         </div>
       </section>
+
+      <footer class="text-center">
+        <div class="row">
+          <div class="col-md-12">
+            <p>All Rights Reserved!</p>
+          </div>
+        </div>
+      </footer>
 
     </section>
 

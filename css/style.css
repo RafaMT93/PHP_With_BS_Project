@@ -167,6 +167,13 @@ section.contact-us textarea {
   height: 120px;
 }
 
+/*Footer*/
+footer {
+    background-color: var(--dark);
+    color: var(--white);
+    padding-bottom: .625rem;  
+}
+
 @media screen and (max-width: 1024px) {
   section.team .team-single .user-picture {
     width: 40%;
