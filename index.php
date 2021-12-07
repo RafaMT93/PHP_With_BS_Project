@@ -156,6 +156,93 @@
           </div>
         </section>
 
+        <section class="team">
+          <h2>Team</h2>
+          <div class="container team-container">
+            <div class="row">
+              <div class="col-md-6">
+
+                <div class="team-single">
+
+                  <div class="row">
+
+                    <div class="col-md-2">
+                      <div class="user-picture"></div>
+                    </div>
+                    <div class="col-md-10">
+                      <h3>Rafael</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet leo dolor. Praesent feugiat, lectus at rhoncus ornare, magna augue tincidunt nulla, sed cursus mauris justo nec quam. Sed pretium metus ut vehicula consectetur. Donec eu urna vitae velit interdum egestas.</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="col-md-6">
+
+              <div class="team-single">
+
+                <div class="row">
+
+                  <div class="col-md-2">
+                    <div class="user-picture"></div>
+                  </div>
+                  <div class="col-md-10">
+                    <h3>Leafar</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet leo dolor. Praesent feugiat, lectus at rhoncus ornare, magna augue tincidunt nulla, sed cursus mauris justo nec quam. Sed pretium metus ut vehicula consectetur. Donec eu urna vitae velit interdum egestas.</p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+
+                <div class="team-single">
+
+                  <div class="row">
+
+                    <div class="col-md-2">
+                      <div class="user-picture"></div>
+                    </div>
+                    <div class="col-md-10">
+                      <h3>Ralefa</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet leo dolor. Praesent feugiat, lectus at rhoncus ornare, magna augue tincidunt nulla, sed cursus mauris justo nec quam. Sed pretium metus ut vehicula consectetur. Donec eu urna vitae velit interdum egestas.</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="col-md-6">
+
+              <div class="team-single">
+
+                <div class="row">
+
+                  <div class="col-md-2">
+                    <div class="user-picture"></div>
+                  </div>
+                  <div class="col-md-10">
+                    <h3>Farael</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet leo dolor. Praesent feugiat, lectus at rhoncus ornare, magna augue tincidunt nulla, sed cursus mauris justo nec quam. Sed pretium metus ut vehicula consectetur. Donec eu urna vitae velit interdum egestas.</p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
       </section>
 
     </main>
