@@ -1,13 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
 
     <title>Dev Project</title>
+
   </head>
   <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
@@ -25,13 +26,13 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#" role="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about">About</a>
+              <a class="nav-link" href="about" role="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact">Contact</a>
+              <a class="nav-link" href="contact" role="nav-link">Contact</a>
             </li>
 
           </ul>
@@ -42,8 +43,34 @@
 
     </nav>
 
+    <main>
+
+      <section class="box">
+        <section class="banner">
+
+          <div class="overlay"></div>
+
+          <div class="container">
+            <div class="row">
+
+              <div class="col-md-12">
+
+                <h2>My Project</h2>
+                <h3>My first project utilizing bootstrap with PHP</h3>
+                <button type="button" class="btn btn-lg btn-primary">Click Here for more projects</button>
+
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+      </section>
+
+    </main>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
 
   </body>
+
 </html>
