@@ -3,6 +3,7 @@
   --gray: #aaa;
   --blackText: #333;
   --black: #000;
+  --defaultColor: #26A69A;
 }
 
 * {
@@ -27,7 +28,7 @@ section.banner {
   background-position: center;
   padding: 150px 0;
 }
-section.banner > .container {
+section.banner .container {
   position: relative;
   z-index: 2;
 }
@@ -41,27 +42,33 @@ section.banner > .container {
 }
 
 div.call-banner h2 {
-  color: #fff;
+  color: var(--defaultColor);
   font-size: 3rem;
 }
 div.call-banner p {
   margin: 1.5rem 0;
-  color: #aaa;
+  color: var(--gray);
   font-size: 1.5rem;
   font-weight: 300;
 }
-div.call-banner > div > div > button {
+
+div.call-banner button {
+  color: var(--white);
+  background: var(--defaultColor);
+  transition: .5s;
+}
+div.call-banner button:hover {
   border-radius: 0;
-  color: #fff;
+  background: #1d9186;
 }
 
 section.register {
-  background: #26A69A;
+  background: var(--defaultColor);
   padding: 1.2rem 0;
 }
 
 section.register h2 {
-  color: #fff;
+  color: var(--white);
 }
 
 section.register input[type="text"].form-control {
@@ -86,6 +93,7 @@ section.register input[type="submit"]:hover{
 }
 
 section.testimony {
+  padding: 2rem 0;
   margin: 1rem 0 0 0;
 }
 
@@ -97,4 +105,25 @@ section.testimony blockquote {
   font-size: .9rem;
   border-left: var(--gray) solid .3rem;
   padding: 0 0 0 1rem;
+}
+
+section.differentials {
+  padding: 2rem 0;
+  background: rgba(225, 225, 225);
+}
+
+section.differentials h2 {
+  color: var(--blackText);
+}
+
+section.differentials .differentials-container {
+  margin-top: 1.9rem;
+}
+
+section.differentials .differentials-container h2 {
+  font-size: 1.5rem;
+}
+
+section.differentials .differentials-container h3 {
+  color: var(--defaultColor);
 }
