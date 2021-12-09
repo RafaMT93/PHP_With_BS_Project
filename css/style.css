@@ -4,7 +4,7 @@
   --blackText: #333;
   --dark: #212529;
   --black: #000;
-  --defaultColor: #26A69A;
+  --defaultColor: #26a69a;
 }
 
 * {
@@ -13,7 +13,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -57,7 +57,7 @@ div.call-banner p {
 div.call-banner button {
   color: var(--white);
   background: var(--defaultColor);
-  transition: .5s;
+  transition: 0.5s;
 }
 div.call-banner button:hover {
   border-radius: 0;
@@ -73,23 +73,23 @@ section.register {
 section.register h2 {
   color: var(--white);
 }
-section.register input[type="text"].form-control {
+section.register input[type='text'].form-control {
   width: 50%;
   height: 2.5rem;
-  border: 0,0625rem solid #ccc;
+  border: 0, 0625rem solid #ccc;
   display: inline-block;
   border-radius: 0;
   outline: none;
 }
-section.register input[type="submit"] {
+section.register input[type='submit'] {
   height: 2.5rem;
   width: 4rem;
   border-radius: 0 10px 10px 0;
   border: transparent;
   background-color: #f8f9fa;
-  transition: .5s;
+  transition: 0.5s;
 }
-section.register input[type="submit"]:hover{
+section.register input[type='submit']:hover {
   background-color: #f9fafb;
 }
 
@@ -104,8 +104,8 @@ section.testimony h2 {
 }
 section.testimony blockquote {
   color: var(--gray);
-  font-size: .9rem;
-  border-left: var(--gray) solid .3rem;
+  font-size: 0.9rem;
+  border-left: var(--gray) solid 0.3rem;
   padding: 0 0 0 1rem;
 }
 
@@ -169,9 +169,9 @@ section.contact-us textarea {
 
 /*Footer*/
 footer {
-    background-color: var(--dark);
-    color: var(--white);
-    padding-bottom: .625rem;  
+  background-color: var(--dark);
+  color: var(--white);
+  padding-bottom: 0.625rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -182,16 +182,16 @@ footer {
   }
 }
 @media screen and (max-width: 500px) {
-  section.register input[type="text"].form-control {
+  section.register input[type='text'].form-control {
     width: 80%;
   }
-  section.register input[type="submit"] {
+  section.register input[type='submit'] {
     height: 2.5rem;
     width: 50%;
-    margin-top:0.625rem;
+    margin-top: 0.625rem;
     border-radius: 10px;
     border: transparent;
     background-color: #f8f9fa;
-    transition: .5s;
+    transition: 0.5s;
   }
 }
