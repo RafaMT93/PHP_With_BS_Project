@@ -59,7 +59,9 @@
           <div class="row">
             <div class="col-md-12 text-center">
 
-              <h2><?php echo htmlentities('<') ?>My Project<?php echo htmlentities('>') ?></h2>
+              <h2>
+                <?php echo htmlentities('<') ?>My Project<?php echo htmlentities('>') ?>
+              </h2>
               <p>My first project utilizing bootstrap with PHP</p>
               <button type="button" class="btn btn-md">Click Here for more projects</button>
 
@@ -124,7 +126,16 @@
       <section class="team">
         <h2>Team</h2>
         <div class="container team-container">
-          <div class="row">
+          <div class="row" enctype="multipart/form-data">
+
+            <?php
+              $selectMembers = $pdo->prepare("SELECT * FROM `db_team`");
+              $selectMembers->execute();
+              $members = $selectMembers->fetchAll();
+              for($i = 0; $i < count($members); $i++):
+            ?>
+
+
             <div class="col-md-6">
 
               <div class="team-single">
@@ -132,11 +143,29 @@
                 <div class="row">
 
                   <div class="col-md-2">
-                    <div class="user-picture"></div>
+                    <div class="user-picture">
+                      
+                      <?php
+
+                        echo '<img src="data:image/jpg;base64,'.base64_encode($members[$i]["MEMBER_IMG"]).'" />';
+                      ?>
+                    </div>
                   </div>
                   <div class="col-md-10">
-                    <h3>Rafael</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet leo dolor. Praesent feugiat, lectus at rhoncus ornare, magna augue tincidunt nulla, sed cursus mauris justo nec quam. Sed pretium metus ut vehicula consectetur. Donec eu urna vitae velit interdum egestas.</p>
+                    <h3>
+
+                      <?php
+                        printf($members[$i]["MEMBER_NAME"]);
+                      ?>
+
+                    </h3>
+                    <p>
+                    
+                      <?php
+                        printf($members[$i]["MEMBER_DESCRIPTION"]);
+                      ?>
+
+                    </p>
                   </div>
 
                 </div>
@@ -144,67 +173,14 @@
               </div>
 
             </div>
-            <div class="col-md-6">
 
-            <div class="team-single">
+            <?php 
+              endfor; 
+            ?>
 
-              <div class="row">
 
-                <div class="col-md-2">
-                  <div class="user-picture"></div>
-                </div>
-                <div class="col-md-10">
-                  <h3>Leafar</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet leo dolor. Praesent feugiat, lectus at rhoncus ornare, magna augue tincidunt nulla, sed cursus mauris justo nec quam. Sed pretium metus ut vehicula consectetur. Donec eu urna vitae velit interdum egestas.</p>
-                </div>
-
-              </div>
-
-            </div>
-
-            </div>
           </div>
 
-          <div class="row">
-            <div class="col-md-6">
-
-              <div class="team-single">
-
-                <div class="row">
-
-                  <div class="col-md-2">
-                    <div class="user-picture"></div>
-                  </div>
-                  <div class="col-md-10">
-                    <h3>Ralefa</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet leo dolor. Praesent feugiat, lectus at rhoncus ornare, magna augue tincidunt nulla, sed cursus mauris justo nec quam. Sed pretium metus ut vehicula consectetur. Donec eu urna vitae velit interdum egestas.</p>
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-            <div class="col-md-6">
-
-            <div class="team-single">
-
-              <div class="row">
-
-                <div class="col-md-2">
-                  <div class="user-picture"></div>
-                </div>
-                <div class="col-md-10">
-                  <h3>Farael</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet leo dolor. Praesent feugiat, lectus at rhoncus ornare, magna augue tincidunt nulla, sed cursus mauris justo nec quam. Sed pretium metus ut vehicula consectetur. Donec eu urna vitae velit interdum egestas.</p>
-                </div>
-
-              </div>
-
-            </div>
-
-            </div>
-          </div>
         </div>
       </section>
 
