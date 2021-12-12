@@ -12,6 +12,7 @@ For viewing, you need clone and follow the instructions for [this project](https
 ![CSS3](https://img.shields.io/badge/-CSS3-333333?style=flat&logo=CSS3)
 ![JQuery](https://img.shields.io/badge/-JQuery-333333?style=flat&logo=jquery)
 ![PHP](https://img.shields.io/badge/-PHP-333333?style=flat&logo=PHP)
+![XAMPP](https://img.shields.io/badge/-XAMPP-333333?style=flat&logo=xampp)
 
 - For BackEnd
   
@@ -21,6 +22,7 @@ For viewing, you need clone and follow the instructions for [this project](https
 ![JQuery](https://img.shields.io/badge/-JQuery-333333?style=flat&logo=jquery)
 ![PHP](https://img.shields.io/badge/-PHP-333333?style=flat&logo=PHP)
 ![MySQL](https://img.shields.io/badge/-MySQL-333333?style=flat&logo=mysql)
+![XAMPP](https://img.shields.io/badge/-XAMPP-333333?style=flat&logo=xampp)
 
 ## 🎯 Objective
 
