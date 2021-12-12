@@ -2,7 +2,7 @@
 ---
 ## Overview
 A site created for PHP and MySQL study.
-For viewing, you need to download and follow the instructions for [this project](https://github.com/RafaMT93/PHP_With_BS_Project_CMS)
+For viewing, you need clone and follow the instructions for [this project](https://github.com/RafaMT93/PHP_With_BS_Project_CMS)
 ## ⚙️ Technologies Uses
 
 - For FrontEnd
