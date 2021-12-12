@@ -3,6 +3,9 @@
   $about = $pdo->prepare('SELECT * FROM `db_about`');
   $about->execute();
   $about = $about->fetch()['ABOUT_TXT'];
+  $color = $pdo->prepare('SELECT * FROM `admin_config`');
+  $color->execute();
+  $color = $color->fetchAll();
 ?>
 <!doctype html>
 <html lang="pt-br">
@@ -15,6 +18,19 @@
 
     <title>Dev Project</title>
 
+    <style type="text/css">
+      :root {
+        --white: #fff;
+        --gray: #aaa;
+        --blackText: #333;
+        --dark: #212529;
+        --black: #000;
+        <?php foreach($color as $key => $val): ?>
+        --defaultColor:<?php printf($val['PRIMARY_COLOR']); ?>;
+        --defaultColorHover: <?php printf($val['PRIMARY_COLOR']); ?>
+        <?php endforeach; ?>
+     }
+      </style>
   </head>
   <body>
 
@@ -126,56 +142,48 @@
       <section class="team">
         <h2>Team</h2>
         <div class="container team-container">
-          <div class="row" enctype="multipart/form-data">
+          <div class="row">
 
             <?php
               $selectMembers = $pdo->prepare("SELECT * FROM `db_team`");
               $selectMembers->execute();
-              $members = $selectMembers->fetchAll();
-              for($i = 0; $i < count($members); $i++):
+              $members = $selectMembers->fetchAll(PDO::FETCH_ASSOC);
+              foreach($members as $key => $value):
             ?>
-
-
-            <div class="col-md-6">
-
+            
+            <div class="col-md-6" >
               <div class="team-single">
-
                 <div class="row">
-
                   <div class="col-md-2">
-                    <div class="user-picture">
+                    <div class="user-picture" enctype="application/octet-stream
+">
                       
-                      <?php
+                      <img src="data:Content-Type:image/jpeg;base64,<?php echo base64_encode($value['MEMBER_IMG']); ?>" />
 
-                        echo '<img src="data:image/jpg;base64,'.base64_encode($members[$i]["MEMBER_IMG"]).'" />';
-                      ?>
                     </div>
                   </div>
                   <div class="col-md-10">
                     <h3>
 
                       <?php
-                        printf($members[$i]["MEMBER_NAME"]);
+                        printf($value["MEMBER_NAME"]);
                       ?>
 
                     </h3>
                     <p>
                     
                       <?php
-                        printf($members[$i]["MEMBER_DESCRIPTION"]);
+                        printf($value["MEMBER_DESCRIPTION"]);
                       ?>
 
                     </p>
                   </div>
-
                 </div>
-
               </div>
-
             </div>
 
             <?php 
-              endfor; 
+              endforeach; 
             ?>
 
 
